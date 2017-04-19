@@ -1,0 +1,14 @@
+body {
+    font-family: "PT Sans", "Arial", serif;
+}
+.features-preface h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weigt: bold;
+	color: black;
+}
+.features-img h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weigt: bold;
+}
