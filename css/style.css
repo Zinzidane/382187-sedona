@@ -1,14 +1,227 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "PT Sans", "Arial", serif;
 }
-.features-preface h2 {
-	font-size: 21px;
-	line-height: 26px;
-	font-weigt: bold;
-	color: black;
+
+.container-all {
+    width: 1200px;
+    margin: 0 auto;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.main-navigation {
+    width: 1200px;
+}
+
+.bg-image-top {
+    width: 458px;
+    min-height: 352px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 23px;
+    background: blue;
+}
+
+.features-preface {
+    width: 637px;
+    min-height: 97px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.features-preface h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weigt: bold;
+    color: black;
+}
+
+.features-img {
+    width: 1200px;
+    min-height: 256px;
+    margin: 0;
+    background: rgb(129, 179, 210);
+    color: white;
+}
+
+.third {
+    float: left;
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.two-third {
+    float: left;
+    width: 800px;
+    height: 256px;
+    vertical-align: top;
+    line-height: 0;
+}
+
+.feature-icons {
+    width: 1200px;
+    min-height: 330px;
+}
+
+.appartment,
+.food,
+.gift {
+    display: block;
+    margin: 0 auto;
+    margin-top: 61px;
+}
+
+.features-last {
+    background: rgb(238, 238, 238);
+}
+
+.features-last .content {
+    padding: 47px 50px 60px;
+}
+
+.interested-container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.form-container {
+    text-align: center;
+}
+
 .features-img h2 {
-	font-size: 21px;
-	line-height: 21px;
-	font-weigt: bold;
+    font-size: 21px;
+    line-height: 21px;
+    font-weigt: bold;
+}
+
+.main-footer {
+    margin-top: 0px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.footer-contacts {
+    float: left;
+    width: 136px;
+    padding-left: 132px;
+    margin-right: 256px;
+    min-height: 24px;
+}
+
+.footer-social {
+    float: left;
+    width: 150px;
+    min-height: 46px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 195px;
+    min-height: 39px;
+    padding-right: 103px;
+}
+
+/* inner.html*/
+.filter {
+	width: 1200px;
+}
+
+.fourth {
+	float: left;
+	width: 300px;
+	padding: 27px 10px 30px 26px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.fourth:first-child{
+	padding-left: 72px;
+}
+fieldset{
+	min-height: 115px;
+	border: 0;
+}
+.two-fourth {
+    display: inline-block;
+    width: 600px;
+    padding-top: 26px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.range {
+    float: right;
+    width: 330px;
+    margin-right: 70px;
+}
+.results{
+	width: 1200px;
+	margin: 0 auto;
+}
+.found {
+	float: left;
+	margin-right: 50px;
+	padding-left: 72px;
+}
+.sorting{
+	float: left;
+	margin-right: 35px;
+}
+.sorting ul{
+	float: right;
+}
+.view-results .photo {
+    display: inline-block;
+    width: 235px;
+    padding: 30px 0;
+    padding-left: 72px;
+    line-height: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.view-results img {
+    width: 135px;
+    height: 90px;
+}
+
+.view-results .hotel-container {
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 2px;
+    width: 770px;
+    vertical-align: top;
+}
+
+.hotel-container h2 {
+    display: inline-block;
+    margin-bottom: 7px;
+    line-height: 26px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.ratio-info {
+    float: right;
+    width: 185px;
+    padding-top: 28px;
 }
