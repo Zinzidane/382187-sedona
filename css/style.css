@@ -2,6 +2,13 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -20,22 +27,55 @@ body {
 }
 
 .main-header {
-    width: 1200px;
     margin: 0 auto;
-    margin-bottom: 70px;
 }
 
-.main-navigation {
-    width: 1200px;
+.main-navigation ul {
+    margin: 0 71px;
+    padding: 0px;
+    list-style: none;
+}
+
+.main-navigation li {
+    float: left;
+    padding: 15px 0px;
+    text-align: left;
+}
+
+.main-navigation li:nth-child(2),
+.main-navigation li:nth-child(3) {
+    padding-left: 147px;
+}
+
+.main-navigation li:nth-child(n+3) {
+    float: right;
+    text-align: right;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.index-logo {
+    position: absolute;
+    top: 0;
+    right: 400px;
 }
 
 .bg-image-top {
+    min-height: 572px;
+    margin-bottom: 65px;
+    background: url(../img/bg-mountains.jpg) 50% 50% no-repeat;
+}
+
+.image-top {
+    display: block;
     width: 458px;
-    min-height: 352px;
-    margin-right: auto;
+    height: 352px;
+    padding-top: 75px;
     margin-left: auto;
-    margin-bottom: 23px;
-    background: blue;
+    margin-right: auto;
 }
 
 .features-preface {
@@ -43,7 +83,7 @@ body {
     min-height: 97px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     text-align: center;
 }
 
@@ -55,11 +95,14 @@ body {
 }
 
 .features-img {
-    width: 1200px;
     min-height: 256px;
     margin: 0;
     background: rgb(129, 179, 210);
     color: white;
+}
+
+.features-img .item {
+    padding-top: 50px;
 }
 
 .third {
@@ -67,20 +110,19 @@ body {
     width: 400px;
     text-align: center;
     vertical-align: middle;
-    box-sizing: border-box;
 }
 
 .two-third {
     float: left;
     width: 800px;
     height: 256px;
+    outline: none;
     vertical-align: top;
     line-height: 0;
 }
 
 .feature-icons {
-    width: 1200px;
-    min-height: 330px;
+    padding-bottom: 70px;
 }
 
 .appartment,
@@ -88,14 +130,18 @@ body {
 .gift {
     display: block;
     margin: 0 auto;
-    margin-top: 61px;
+    margin-top: 50px;
+}
+
+.gift {
+    margin-top: 43px;
 }
 
 .features-last {
     background: rgb(238, 238, 238);
 }
 
-.features-last .content {
+.features-last .item {
     padding: 47px 50px 60px;
 }
 
@@ -141,63 +187,113 @@ body {
     padding-right: 103px;
 }
 
+
 /* inner.html*/
+
+.catalog {
+    margin: 0 auto;
+}
+
 .filter {
-	width: 1200px;
+    width: 1200px;
+    background: url(../img/filter-background.jpg) 50% 50% no-repeat;
+    color: white;
 }
 
 .fourth {
-	float: left;
-	width: 300px;
-	padding: 27px 10px 30px 26px;
-	vertical-align: top;
-	box-sizing: border-box;
+    float: left;
+    width: 300px;
+    padding: 27px 10px 30px 0px;
+    vertical-align: top;
 }
-.fourth:first-child{
-	padding-left: 72px;
+
+.fourth:first-child {
+    padding-left: 65px;
 }
-fieldset{
-	min-height: 115px;
-	border: 0;
+
+fieldset {
+    border: 0;
 }
+
+.filter-form legend {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.filter-form label {
+    position: relative;
+    width: 100px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
 .two-fourth {
     display: inline-block;
     width: 600px;
-    padding-top: 26px;
     vertical-align: top;
-    box-sizing: border-box;
 }
 
-.range {
+.filter-range {
     float: right;
     width: 330px;
     margin-right: 70px;
 }
-.results{
-	width: 1200px;
-	margin: 0 auto;
+
+.range-price {
+    float: left;
+    width: 160px;
 }
+
+.range-control {
+    position: relative;
+    margin-left: 12px;
+    margin-bottom: 32px;
+}
+
+.result-btn {
+    display: block;
+    margin: 32px auto 33px;
+}
+
+.results-container {
+    margin: 0 auto;
+    padding-left: 72px;
+}
+
+.results {
+    width: 1200px;
+    padding: 30px 0;
+}
+
 .found {
-	float: left;
-	margin-right: 50px;
-	padding-left: 72px;
+    float: left;
+    margin-right: 50px;
 }
-.sorting{
-	float: left;
-	margin-right: 35px;
+
+.sorting {
+    float: left;
 }
-.sorting ul{
-	float: right;
+
+.sorting ul {
+    float: right;
+    list-style: none;
+    margin: 0;
 }
+
+.sorting li {
+    float: left;
+    margin-right: 35px;
+    vertical-align: top;
+}
+
 .view-results .photo {
     display: inline-block;
     width: 235px;
     padding: 30px 0;
-    padding-left: 72px;
     line-height: 0;
     vertical-align: top;
-    box-sizing: border-box;
 }
+
 .view-results img {
     width: 135px;
     height: 90px;
@@ -208,7 +304,7 @@ fieldset{
     padding-top: 25px;
     padding-bottom: 30px;
     padding-left: 2px;
-    width: 770px;
+    width: 720px;
     vertical-align: top;
 }
 
@@ -216,12 +312,11 @@ fieldset{
     display: inline-block;
     margin-bottom: 7px;
     line-height: 26px;
-    color: inherit;
     text-decoration: none;
 }
 
 .ratio-info {
     float: right;
-    width: 185px;
+    width: 140px;
     padding-top: 28px;
 }
