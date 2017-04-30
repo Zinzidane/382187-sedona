@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,7 +26,6 @@
                     <li>
                         <a href="#">Карта штата</a>
                     </li>
-                    
                 </ul>
                 <div class="index-logo">
                     <img src="img/logo.png" width="138" height="70" alt="Седона">
@@ -74,7 +75,8 @@
                 <div class="item third">
                     <h2>Там есть мост дьявола</h2>
                     <span>&mdash; №2 &mdash;</span>
-                    <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
+                    <p>Да, по нему можно пройти! Если конечно
+                        <br>вы осмелитесь</p>
                 </div>
             </section>
             <section class="features-last clearfix">
@@ -84,7 +86,7 @@
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="item third">
-                    <b>Красивая площадь</b>
+                    <b>Красивая дорога</b>
                     <span>&mdash; №4 &mdash;</span>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
@@ -96,45 +98,52 @@
             </section>
             <section class="interested clearfix">
                 <div class="interested-container">
-                    <h3>Заинтересовались?</h3>
-                    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне</p>
+                    <h2>Заинтересовались?</h2>
+                    <p>Укажите предполагаемые даты поездки,
+                        <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </div>
                 <div class="form-container">
                     <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                        <label for="day-in">Дата заезда:</label>
-                        <input class="date field" type="text" id="day-in" name="day-in" placeholder="24 апреля 2017" required>
-                        <div class="calendar"></div>
-                        <label for="day-out">Дата выезда:</label>
-                        <input class="date field" type="text" id="day-out" name="day-out" placeholder="4 июля 2017" required>
-                        <div class="calendar"></div>
-                        <div class="half-width">
-                            <label for="adults">Взрослые:</label>
-                            <div class="number-container">
-                                <button class="btn minus-btn" type="button">
-                                    <i class="minus-icon">-</i>
-                                </button>
-                                <input class="number field" type="text" name="adults" id="adults" value="2" size="1" required>
-                                <button class="btn plus-btn" type="button">
-                                    <i class="plus-icon">+</i>
-                                </button>
-                            </div>
-                            <div>
-                                <form class="search-hotel" action="https://echo.htmlacademy.ru" method="post">
-                                    <div class="half-width">
-                                        <label for="kids">Дети:</label>
-                                        <div class="number-container">
-                                            <button class="btn minus-btn" type="button">
-                                                <i class="minus-icon">-</i>
-                                            </button>
-                                            <input class="number field" type="text" name="kids" id="kids" value="9" size="1">
-                                            <button class="btn plus-btn" type="button">
-                                                <i class="plus-icon">+</i>
-                                            </button>
-                                        </div>
-                                        <button class="find-btn" type="button"><span>Найти</span></button>
-                                </form>
+                        <div class="search-form-line clearfix">
+                            <label for="day-in">Дата заезда:</label>
+                            <input class="date field" type="text" id="day-in" name="day-in" placeholder="24 апреля 2017" required>
+                            <div class="calendar"></div>
+                        </div>
+                        <div class="search-form-line clearfix">
+                            <label for="day-out">Дата выезда:</label>
+                            <input class="date field" type="text" id="day-out" name="day-out" placeholder="4 июля 2017" required>
+                            <div class="calendar"></div>
+                        </div>
+                        <div class="search-form-line clearfix">
+                            <div class="half-width">
+                                <label for="adults">Взрослые:</label>
+                                <div class="number-container">
+                                    <button class="btn minus-btn" type="button">
+                                        <i class="minus-icon"></i>
+                                    </button>
+                                    <input class="number field" type="text" name="adults" id="adults" value="2" size="1" required>
+                                    <button class="btn plus-btn" type="button">
+                                        <i class="plus-icon"></i>
+                                    </button>
                                 </div>
+                            </div>
+                            <div class="half-width">
+                                <label for="kids">Дети:</label>
+                                <div class="number-container">
+                                    <button class="btn minus-btn" type="button">
+                                        <i class="minus-icon"></i>
+                                    </button>
+                                    <input class="number field" type="text" name="kids" id="kids" value="9" size="1">
+                                    <button class="btn plus-btn" type="button">
+                                        <i class="plus-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="find-btn" type="button"><span>Найти</span></button>
+                    </form>
+                </div>
             </section>
             <section class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1492333161551" width="1200" height="487" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -151,11 +160,11 @@
                 <a class="social-btn social-btn-yt" href="#">Youtube</a>
             </section>
             <section class="footer-copyright">
-                <span>Website by:</span>
-                <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+                <span>Website by</span>
+                <a class="btn-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </section>
         </footer>
-        </div>
+    </div>
 </body>
 
 </html>
