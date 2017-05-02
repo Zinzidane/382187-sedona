@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    max-width: 1200px;
+    min-width: 1200px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-size: 14px;
@@ -288,11 +288,12 @@ body {
 
 .search-form label {
     float: left;
-    padding: 5px 0 7px;
+    padding: 3px 0 7px;
 }
 
 .search-form .field {
     float: right;
+    font: inherit;
     line-height: 26px;
     padding: 4px 15px 8px;
     border: none;
@@ -321,9 +322,10 @@ body {
 .search-form .calendar::before {
     content: "";
     display: inline-block;
+    vertical-align: bottom;
     position: absolute;
-    bottom: 6px;
-    right: 6px;
+    bottom: 11px;
+    right: 5px;
     width: 21px;
     height: 22px;
     background: url("../img/spritesheet.png") 0 0 no-repeat;
@@ -371,6 +373,7 @@ body {
     position: absolute;
     top: 0;
     padding: 6px 9px;
+    font-weight: 700;
     line-height: 26px;
     color: #a9a9a9;
     background: #f2f2f2;
@@ -379,23 +382,30 @@ body {
 }
 
 .number-container .minus-btn {
-    left: 110px;
+    left: 119px;
 }
 
 .number-container .plus-btn {
-    right: 0;
-}
-
-.half-width:first-child .plus-btn {
     right: 3px;
 }
 
+.half-width:first-child .plus-btn {
+    right: 6px;
+}
+
 .half-width:last-child .minus-btn {
-    left: 115px;
+    left: 123px;
+}
+.minus-icon,
+.plus-icon {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
 .minus-icon::before {
     content: "";
+    position: absolute;
     display: inline-block;
     bottom: 20px;
     left: 5px;
@@ -418,9 +428,10 @@ body {
 
 .plus-icon::before {
     content: "";
+    position: absolute;
     display: inline-block;
-    bottom: 15px;
-    left: 5px;
+    bottom: 16px;
+    left: 0px;
     width: 11px;
     height: 11px;
     background: url("../img/spritesheet.png") 0 0 no-repeat;
@@ -469,13 +480,18 @@ body {
 
 .map {
     background: url(../img/map.jpg) 50% 0 no-repeat;
-    height: 487px;
+    height: 593px;
 }
 
-.main-footer {
+.footer {
     color: #000000;
     background-color: #ffffff;
     text-align: center;
+}
+
+.main-footer{
+    opacity: 0.9;
+    margin-top: -120px;
 }
 
 .footer-contacts {
@@ -794,7 +810,6 @@ input[type="checkbox"]:checked + label::after {
     float: right;
     position: relative;
     width: 40px;
-    margin-left: 490px;
 }
 
 .sorting-btn a {
@@ -901,7 +916,7 @@ input[type="checkbox"]:checked + label::after {
 .btn {
     display: inline-block;
     margin-right: 3px;
-    padding: 4px 16px;
+    padding: 4px 16px 3px;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
@@ -944,20 +959,23 @@ input[type="checkbox"]:checked + label::after {
 
 .ratio-info {
     float: right;
-    width: 110px;
+    width: 111px;
 }
 
 .ratio {
     display: block;
-    padding: 5px;
+    padding: 1px;
     padding-left: 15px;
     color: #666666;
     background-color: #f2f2f2;
 }
 
+.ratio span {
+    line-height: 21px;
+}
 .stars {
     display: block;
-    margin-bottom: 33px;
+    margin-bottom: 38px;
     text-align: right;
 }
 
