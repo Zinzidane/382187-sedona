@@ -18,6 +18,8 @@ body {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
+    color: #000000;
+    background: #f2f2f2;
 }
 
 .container-all {
@@ -58,6 +60,9 @@ body {
 .main-navigation li:nth-child(4) {
     float: right;
 }
+.main-navigation li:nth-child(3){
+	padding-left: 15px;
+}
 
 .main-navigation a {
     font-weight: 700;
@@ -94,7 +99,6 @@ body {
 .bg-image-top {
     position: relative;
     height: 508px;
-    margin-bottom: 60px;
     background: #517ca4 url(../img/bg-mountains.jpg) 50% 101% no-repeat;
 }
 
@@ -114,14 +118,16 @@ body {
 }
 
 .features-preface {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 55px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 52px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .features-preface h2 {
     margin: 0 360px;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
     font-size: 21px;
     font-weight: 700;
     color: #000000;
@@ -138,21 +144,24 @@ body {
 }
 
 .features-img .item {
-    padding: 40px 45px 45px;
+    padding: 45px;
 }
 
 .features-img h2 {
     width: 153px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
 }
-
+.features-img span{
+	display: block;
+	margin-bottom: 20px;
+}
 .features-img p {
     margin: 0;
-    margin-top: 20px;
+    line-height: 21px;
 }
 
 .third {
@@ -167,20 +176,20 @@ body {
 }
 
 .feature-icons {
-    margin-bottom: 70px;
+   	padding-bottom: 67px;
     color: #000000;
     background-color: #ffffff;
 }
 
 .feature-icons .item {
-    padding: 0 45px;
+    padding: 0 50px;
 }
 
 .appartment,
 .food,
 .gift {
     display: block;
-    margin: 58px auto 32px;
+    margin: 58px auto 30px;
 }
 
 .gift {
@@ -189,19 +198,22 @@ body {
 }
 
 .feature-icons b {
-    margin-top: 32px;
+	display: block;
+    margin-bottom: 25px;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
 }
 
 .feature-icons p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;	
     line-height: 21px;
 }
 
 .features-last {
     background: rgb(238, 238, 238);
-    margin-bottom: 58px;
 }
 
 .features-last .item {
@@ -222,8 +234,14 @@ body {
     line-height: 21px;
 }
 
+.interested{
+	color: #000000;
+	background-color: #ffffff;
+}
+
 .interested-container {
     margin: 0 55px 47px;
+    padding-top: 56px;
     color: #000000;
     background-color: #ffffff;
 }
@@ -233,6 +251,7 @@ body {
     padding: 0;
     margin-bottom: 30px;
     font-size: 30px;
+    line-height: 24px;
     font-weight: 700;
 }
 
@@ -266,7 +285,7 @@ body {
     top: 85px;
     left: 0;
     width: 568px;
-    padding: 55px 55px;
+    padding: 58px 55px 54px;
     margin: 0 auto;
     box-sizing: border-box;
     line-height: 26px;
@@ -288,14 +307,14 @@ body {
 
 .search-form label {
     float: left;
-    padding: 3px 0 7px;
+    padding: 5px 0 7px;
 }
 
 .search-form .field {
     float: right;
     font: inherit;
     line-height: 26px;
-    padding: 4px 15px 8px;
+    padding: 5px 15px 5px;
     border: none;
     outline: none;
     box-sizing: border-box;
@@ -372,7 +391,7 @@ body {
 .number-container .btn {
     position: absolute;
     top: 0;
-    padding: 6px 9px;
+    padding: 5px 9px;
     font-weight: 700;
     line-height: 26px;
     color: #a9a9a9;
@@ -454,17 +473,20 @@ body {
     display: block;
     width: 458px;
     margin: 0 auto;
-    margin-top: 54px;
-    padding: 14px 10px 15px;
+    margin-top: 55px;
+    padding: 15px 10px 17px;
     box-sizing: border-box;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #ffffff;
     background: #81b3d2;
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.search-form .find-btn span{
+	color: #ffffff;
+	font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .search-form .find-btn:hover {
@@ -523,7 +545,7 @@ body {
     position: relative;
     width: 46px;
     height: 48px;
-    margin: 0 2px;
+    margin: 0 1px;
     font-size: 0;
     vertical-align: top;
     text-align: center;
@@ -575,7 +597,7 @@ body {
 .footer-copyright {
     float: right;
     width: 400px;
-    padding-top: 39px;
+    padding-top: 41px;
     padding-bottom: 41px;
 }
 
@@ -621,14 +643,18 @@ body {
     vertical-align: top;
 }
 
+.fourth:nth-child(2){
+	margin-left: -10px;
+}
+
 .fourth fieldset {
     padding: 0px;
     margin: 0px;
     border: 0;
 }
 
-.fourth fieldset:first-child {
-    padding-right: 50px;
+.fourth:first-child fieldset {
+    padding-right: 45px;
     margin: 0px;
     border: 0;
 }
@@ -666,20 +692,26 @@ input[type="checkbox"] + label {
     display: block;
     margin: 0;
     margin-bottom: 21px;
-    padding-left: 32px;
+    padding-left: 39px;
     position: relative;
     cursor: pointer;
 }
 
+
 input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
-    width: 22px;
+    width: 26px;
     height: 22px;
     background: url(../img/spritesheet.png) no-repeat;
     background-position: -10px -94px;
     top: 0;
     left: 0;
+}
+
+input[type="checkbox"]:disabled + label::before,
+input[type="checkbox"]:disabled:checked + label::after {
+	opacity: 0.3;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -703,31 +735,120 @@ input[type="checkbox"]:checked + label::after {
 .filter-range {
     float: right;
     width: 314px;
+    padding-left: 16px;
+    box-sizing: content-box;
 }
 
-.filter-range h2 {
-    margin: 0;
-    margin-bottom: 12px;
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 700;
     font-size: 16px;
-    font-weight: bold;
     line-height: 21px;
-    text-transform: uppercase;
 }
 
-.range-price {
-    float: left;
-    width: 155px;
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
 }
 
-.range-control {
-    position: relative;
-    margin-left: 12px;
-    margin-bottom: 32px;
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+ 	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
 }
 
-.result-btn {
-    display: block;
-    margin: 32px auto 33px;
+.price-controls label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.price-controls .min-price {
+	padding-left: 65px;
+}
+
+.price-controls .max-price {
+	padding-left: 70px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.btn-transparent {
+	display: block;
+	margin: 0 95px 0 85px;
+	padding: 6px 30px;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn-transparent:hover {
+	color: #000000;
+	background: #ffffff;
 }
 
 .results {
@@ -792,7 +913,7 @@ input[type="checkbox"]:checked + label::after {
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting .current {
+.sorting .active {
     color: #81b3d2;
     border-bottom: none;
     cursor: text;
@@ -855,10 +976,17 @@ input[type="checkbox"]:checked + label::after {
     border-top: 8px solid rgb(0, 0, 0);
 }
 
+.down-icon.active:hover::before {
+    border: 7px solid transparent;
+    border-top: 8px solid #81b3d2;
+}
+
 .view-results {
     padding-top: 30px;
     padding-bottom: 27px;
     border-bottom: 1px solid rgb(229, 229, 229);
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .view-results .photo {

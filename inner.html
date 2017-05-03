@@ -63,33 +63,27 @@
                                 </div>
                                 <div class="checkbox">
                                     <input type="checkbox" name="wi-fi" id="appartment" checked>
-                                    <label for="appartment">Аппартаменты</label>
+                                    <label for="appartment">Апартаменты</label>
                                 </div>
                             </fieldset>
                         </div>
                         <div class="two-fourth">
                             <div class="filter-range">
-                                <h2>Стоимость в сутки(Р):</h2>
-                                <div class="range">
-                                    <div class="range-price">
-                                        <label>От
-                                            <input type="text" value="0">
-                                        </label>
-                                    </div>
-                                    <div class="range-price">
-                                        <label>До
-                                            <input type="text" value="3000">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="range-control">
-                                    <div class="scale">
-                                        <div class="bar"></div>
-                                    </div>
-                                    <div class="toggle min-toggle"></div>
-                                    <div class="toggle max-toggle"></div>
-                                </div>
-                                <button class="result-btn" type="submit">Показать</button>
+                                <div class="filter-range-title">Стоимость в сутки (р):</div>
+								<div class="price-controls">
+									<label class="min-price">от <input type="text" name="min-price" value="0">
+									</label>
+									<label class="max-price">до <input type="text" name="max-price" value="3000">
+									</label>
+								</div>
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="range-toggle range-toggle-min"></div>
+									<div class="range-toggle range-toggle-max"></div>
+								</div>
+								<button class="btn-transparent" type="submit">Показать</button>
                             </div>
                         </div>
                     </form>
@@ -104,7 +98,7 @@
                         <span>Сортировка</span>
                         <ul>
                             <li>
-                                <a href="#" class="current">По цене</a>
+                                <a href="#" class="active">По цене</a>
                             </li>
                             <li>
                                 <a href="#">По типу</a>
@@ -116,7 +110,7 @@
                     </div>
                     <div class="sorting-btn">
                         <a href="#" class="up-icon"></a>
-                        <a class="current down-icon" href="#"></a>
+                        <a class="active down-icon" href="#"></a>
                     </div>
                 </div>
             </section>
