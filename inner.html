@@ -11,25 +11,27 @@
 <body>
     <div class="container-all">
         <header class="main-header">
-            <nav class="main-navigation">
-                <ul class="nav clearfix">
-                    <li>
-                        <a href="#">Информация</a>
-                    </li>
-                    <li>
-                        <a href="#">Фото и видео</a>
-                    </li>
-                    <li>
-                        <a class="current">Гостиницы</a>
-                    </li>
-                    <li>
-                        <a href="#">Карта штата</a>
-                    </li>
-                </ul>
-                <div class="index-logo">
-                    <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
-                </div>
-            </nav>
+            <div class="inner">
+                <nav class="main-navigation">
+                    <ul class="nav clearfix">
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li>
+                            <a class="current">Гостиницы</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта штата</a>
+                        </li>
+                    </ul>
+                    <div class="index-logo">
+                        <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main class="catalog">
             <section class="filter">
@@ -70,20 +72,22 @@
                         <div class="two-fourth">
                             <div class="filter-range">
                                 <div class="filter-range-title">Стоимость в сутки (р):</div>
-								<div class="price-controls">
-									<label class="min-price">от <input type="text" name="min-price" value="0">
-									</label>
-									<label class="max-price">до <input type="text" name="max-price" value="3000">
-									</label>
-								</div>
-								<div class="range-controls">
-									<div class="scale">
-										<div class="bar"></div>
-									</div>
-									<div class="range-toggle range-toggle-min"></div>
-									<div class="range-toggle range-toggle-max"></div>
-								</div>
-								<button class="btn-transparent" type="submit">Показать</button>
+                                <div class="price-controls">
+                                    <label class="min-price">от
+                                        <input type="text" name="min-price" value="0">
+                                    </label>
+                                    <label class="max-price">до
+                                        <input type="text" name="max-price" value="3000">
+                                    </label>
+                                </div>
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="range-toggle range-toggle-min"></div>
+                                    <div class="range-toggle range-toggle-max"></div>
+                                </div>
+                                <button class="btn-transparent" type="submit">Показать</button>
                             </div>
                         </div>
                     </form>
