@@ -327,7 +327,7 @@ body {
     top: 85px;
     left: 0;
     z-index: 1;
-    display: none;
+    display: block;
     width: 568px;
     margin: 0 auto;
     padding: 58px 55px 54px;
@@ -338,6 +338,10 @@ body {
     text-align: left;
     color: #000000;
     background: #ffffff;
+}
+
+.search-form-hide {
+    display: none;
 }
 
 .search-form-show {
@@ -1196,17 +1200,4 @@ input[type="checkbox"]:checked + label::after {
     height: 17px;
     background: url("../img/spritesheet.png") 0 0 no-repeat;
     background-position: -10px -325px;
-}
-
-.search-form-page {
-    padding: 40px 0;
-}
-
-.search-form-visible {
-    position: static;
-    display: block;
-}
-
-.search-form-footer {
-    margin-top: 0;
 }
