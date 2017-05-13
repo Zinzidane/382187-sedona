@@ -416,6 +416,7 @@ body {
     font-size: 0px;
     line-height: 38px;
     color: #c2c2c2;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -475,8 +476,6 @@ body {
     font-weight: 700;
     color: #a9a9a9;
     background: #f2f2f2;
-    border: none;
-    outline: none;
 }
 
 .number-container .minus-btn {
@@ -561,8 +560,6 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: #81b3d2;
-    border: none;
-    outline: none;
     cursor: pointer;
 }
 
@@ -872,11 +869,11 @@ body {
 }
 
 .price-controls .min-price {
-    padding-left: 65px;
+    padding-left: 64px;
 }
 
 .price-controls .max-price {
-    padding-left: 70px;
+    padding-left: 73px;
 }
 
 .price-controls input {
@@ -1036,6 +1033,7 @@ body {
 }
 
 .sorting-btn a {
+    position: absolute;
     display: inline-block;
     vertical-align: bottom;
     font-size: 0px;
